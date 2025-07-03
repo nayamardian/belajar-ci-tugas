@@ -17,6 +17,13 @@
             </a>
         </li><!-- End Keranjang Nav -->
 
+                    <li class="nav-item">
+                <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="profile">
+                    <i class="bi bi-person"></i>
+                    <span>Profile</span>
+                </a>
+            </li><!-- End Profile Nav -->
+
         <?php if (session()->get('role') == 'admin') { ?>
             <li class="nav-item">
                 <a class="nav-link <?php echo (uri_string() == 'produk') ? "" : "collapsed" ?>" href="produk">
@@ -26,11 +33,11 @@
             </li><!-- End Produk Nav -->
 
             <li class="nav-item">
-                <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="profile">
-                    <i class="bi bi-person"></i>
-                    <span>Profile</span>
+                <a class="nav-link <?php echo (uri_string() == 'diskon') ? "" : "collapsed" ?>" href="diskon">
+                    <i class="bi bi-percent"></i>
+                    <span>Diskon</span>
                 </a>
-            </li><!-- End Profile Nav -->
+            </li><!-- End Diskon Nav -->
 
             <li class="nav-item">
                 <a class="nav-link <?php echo (uri_string() == 'kategori') ? "" : "collapsed" ?>" href="kategori">
